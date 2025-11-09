@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './ui/button';
+import { Button } from '@/components/ui/button';
 import { FileText, Menu, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   const handleDocs = () => {
-  navigate('/docs'); // pindah ke halaman Docs
+  navigate('/'); 
 };
 
   return (
@@ -48,7 +48,7 @@ const Navbar = () => {
               variant="ghost"
               className="text-gray-300 hover:text-white hover:bg-[#8B5CF6]/20 transition-all duration-300"
             >
-              Docs
+              Home
             </Button>
             <Button
               onClick={handleGetCV}
@@ -83,7 +83,7 @@ const Navbar = () => {
               variant="ghost"
               className="w-full text-left text-gray-300 hover:text-white hover:bg-[#8B5CF6]/20 justify-start"
             >
-              Docs
+              Home
             </Button>
             <Button
               onClick={handleGetCV}

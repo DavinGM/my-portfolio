@@ -88,27 +88,7 @@ const HeroSection = () => {
                 Hubungi saya
               </Button>
             </div>
-
-            {/* Social Links */}
-            <div className="flex gap-4 justify-center lg:justify-start pt-6">
-              <a href={portfolioData.socials.github} className="text-gray-400 hover:text-[#8B5CF6] transition-all duration-300 transform hover:scale-110">
-                <Github className="h-6 w-6" />
-              </a>
-              <a href={portfolioData.socials.linkedin} className="text-gray-400 hover:text-[#8B5CF6] transition-all duration-300 transform hover:scale-110">
-                <Linkedin className="h-6 w-6" />
-              </a>
-              <a href={portfolioData.socials.instagram} className="text-gray-400 hover:text-[#8B5CF6] transition-all duration-300 transform hover:scale-110">
-                <Instagram className="h-6 w-6" />
-              </a>
-              <a href={portfolioData.socials.facebook} className="text-gray-400 hover:text-[#8B5CF6] transition-all duration-300 transform hover:scale-110">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href={portfolioData.socials.twitter} className="text-gray-400 hover:text-[#8B5CF6] transition-all duration-300 transform hover:scale-110">
-                <Twitter className="h-6 w-6" />
-              </a>
-            </div>
           </div>
-
           {/* Right Content - Image */}
           <div className="relative hidden lg:flex justify-center items-center">
             <div className="relative w-full max-w-lg">
