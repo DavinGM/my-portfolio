@@ -33,7 +33,7 @@ const Footer = () => {
             {/* di buat card alert hijau  dengan border hitam*/}
             <div className="bg-green-400 p-4 rounded-lg mb-4 border border-[#2d2d2d]">
             <p className="text-white-400 mb-4">
-              - Update Halaman Dokumentasi <i>Docs</i> 1.2  ---Update Info Owner lengkap  <i>home 4.3</i>-- <span className='text-[#8B5CF6] font-bold'>Minggu, 9 November 2025.</span>✔️
+              - Update Sertifikasi <i>00.13/sen, 17 Nov 2025</i> 1.1 
             </p>
             </div>
             <div className="flex gap-3">

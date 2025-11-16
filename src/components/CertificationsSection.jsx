@@ -3,6 +3,8 @@ import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { Award } from 'lucide-react';
 import { portfolioData } from '../mock';
+// import serImage from "../assets/ser.jpg";
+import { images } from "../assets";         // kumpulan gambar
 
 const CertificationsSection = () => {
   return (
@@ -12,9 +14,9 @@ const CertificationsSection = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-              Klarifikasi & <span className="text-[#8B5CF6]">penghargaan</span>
+              Klarifikasi & <span className="text-[#8B5CF6]">Sertifikat</span>
             </h2>
-            <p className="text-gray-400 text-lg">Not Found 409</p>
+            <p className="text-gray-400 text-lg">-</p>
           </div>
 
           {/* Certifications Grid */}
@@ -30,6 +32,7 @@ const CertificationsSection = () => {
                     <div className="bg-[#8B5CF6]/10 p-3 rounded-lg group-hover:bg-[#8B5CF6]/20 transition-colors">
                       <Award className="h-6 w-6 text-[#8B5CF6]" />
                     </div>
+                    <img src="" alt="" />
                     <Badge className="bg-[#8B5CF6]/10 text-[#8B5CF6] border-[#8B5CF6]/30">
                       {cert.year}
                     </Badge>
@@ -37,6 +40,12 @@ const CertificationsSection = () => {
 
                   {/* Content */}
                   <div>
+                        <img
+                            src={images[cert.image]}
+                            alt={cert.title}
+                            className=""
+                        />
+
                     <h3 className="text-lg font-bold text-white mb-2 group-hover:text-[#8B5CF6] transition-colors">
                       {cert.title}
                     </h3>

@@ -1,3 +1,4 @@
+
 export const portfolioData = {
   profile: {
     name: "Davin Gahisan Mustafid",
@@ -183,12 +184,14 @@ export const portfolioData = {
   ],
 
   certifications: [
-    // {
-    //   id: 1,
-    //   title: "",
-    //   issuer: "Amazon Web Services",
-    //   year: "2023"
-    // },
+    // data di daftarkan di asstes/Index.js
+    {
+      id: 1,
+      title: "",
+      issuer: "NextSkill Cara Realistis dapat 10jt Pertama dari Freelance Website",
+      year: "2025",
+      image: "serImage"
+    },
     // {
     //   id: 2,
     //   title: "React Advanced Patterns",
