@@ -16,7 +16,7 @@ const CertificationsSection = () => {
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
               Klarifikasi & <span className="text-[#8B5CF6]">Sertifikat</span>
             </h2>
-            <p className="text-gray-400 text-lg">-</p>
+            <p className="text-gray-400 text-lg">Ini yang saya dapat</p>
           </div>
 
           {/* Certifications Grid */}

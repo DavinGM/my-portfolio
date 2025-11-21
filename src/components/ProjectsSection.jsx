@@ -90,19 +90,18 @@ const ProjectsSection = () => {
 
                   {/* Action Buttons */}
                   <div className="flex gap-3 pt-2">
+                    <a href={project.link}>
                     <Button
                       size="sm"
-                      className="flex-1 bg-[#8B5CF6] hover:bg-[#A855F7] text-white"
-                      onClick={() => alert('Project demo coming soon!')}
-                    >
+                      className="flex-1 bg-[#8B5CF6] hover:bg-[#A855F7] text-white"                    >
                       <ExternalLink className="h-4 w-4 mr-2" />
-                      Demo
+                      {project.name}
                     </Button>
+                    </a>
                     <Button
                       size="sm"
                       variant="outline"
                       className="flex-1 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white"
-                      onClick={() => alert('GitHub repo coming soon!')}
                     >
                       <Github className="h-4 w-4 mr-2" />
                       Code

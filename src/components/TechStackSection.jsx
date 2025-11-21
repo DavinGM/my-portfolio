@@ -9,7 +9,7 @@ const TechStackSection = () => {
     const backend = ['Laravel', 'PHP', 'Node.js', 'MySql', 'MongoDB'];
     const devops = ['Ubuntu', 'Docker', 'Nginx', 'Git'];
     
-    if (frontend.includes(name)) return <Code2 className="h-8 w-8" />;
+    if (frontend.includes(name)) return <i className='fa'></i>;
     if (backend.includes(name)) return <Server className="h-8 w-8" />;
     if (devops.includes(name)) return <Wrench className="h-8 w-8" />;
     return <Database className="h-8 w-8" />;
