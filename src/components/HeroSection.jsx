@@ -32,10 +32,8 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/10 via-[#0f0f10] to-[#0f0f10]"></div>
       
-      {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#8B5CF6]/5 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#A855F7]/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
@@ -43,7 +41,6 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
           <div className="space-y-6 text-center lg:text-left">
             <div className="space-y-2">
               <p className="text-[#8B5CF6] text-sm sm:text-base font-medium tracking-wider uppercase">Hallo ,</p>
@@ -59,7 +56,6 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* Typing effect */}
             <div className="min-h-[80px] flex items-center justify-center lg:justify-start">
               <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-300 font-medium">
                 {displayText}
@@ -71,7 +67,6 @@ const HeroSection = () => {
               {portfolioData.profile.bio}
             </p>
 
-            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Button
                 onClick={() => scrollToSection('projects')}
@@ -89,7 +84,6 @@ const HeroSection = () => {
               </Button>
             </div>
           </div>
-          {/* Right Content - Image */}
           <div className="relative hidden lg:flex justify-center items-center">
             <div className="relative w-full max-w-lg">
               <div className="absolute inset-0 bg-gradient-to-r from-[#8B5CF6] to-[#A855F7] rounded-full blur-3xl opacity-20 animate-pulse"></div>

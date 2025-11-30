@@ -1,51 +1,86 @@
-import React from 'react';
-import { Card } from './ui/card';
-import { Code2, Database, Server, Wrench } from 'lucide-react';
-import { portfolioData } from '../mock';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { portfolioData } from "../mock";
+
 
 const TechStackSection = () => {
-  const getIconForTech = (name) => {
-    const frontend = ['React', 'JavaScript', 'Vs Code', 'Git', 'github'];
-    const backend = ['Laravel', 'PHP', 'Node.js', 'MySql', 'MongoDB'];
-    const devops = ['Ubuntu', 'Docker', 'Nginx', 'Git'];
-    
-    if (frontend.includes(name)) return <i className='fa'></i>;
-    if (backend.includes(name)) return <Server className="h-8 w-8" />;
-    if (devops.includes(name)) return <Wrench className="h-8 w-8" />;
-    return <Database className="h-8 w-8" />;
+  const navigate = useNavigate();
+  const limitedTech = portfolioData.techStack.slice(0, 5);
+  const goToDetail = (tech) => {
+    navigate(`/tech/${tech.name.toLowerCase()}`);
   };
 
   return (
     <section id="techstack" className="py-20 bg-[#1a1a1a]">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-              <span className="text-[#8B5CF6]">Tumpukan</span> teknologi
-            </h2>
-            <p className="text-gray-400 text-lg">Teknologi & alat yang saya gunakan setiap hari</p>
-          </div>
+      <div className="max-w-6xl mx-auto px-6">
 
-          {/* Tech Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
-            {portfolioData.techStack.map((tech, index) => (
-              <Card
-                key={index}
-                className="bg-[#0f0f10] border-[#2d2d2d] p-6 hover:border-[#8B5CF6] hover:shadow-lg hover:shadow-[#8B5CF6]/20 transition-all duration-300 group cursor-pointer"
-              >
-                <div className="flex flex-col items-center justify-center space-y-3">
-                  <div className="text-[#8B5CF6] group-hover:text-[#A855F7] transition-colors duration-300 group-hover:scale-110 transform transition-transform">
-                    {getIconForTech(tech.name)}
-                  </div>
-                  <span className="text-white font-medium text-center text-sm">
-                    {tech.name}
-                  </span>
-                </div>
-              </Card>
-            ))}
-          </div>
+        {/* HEADER RATA TENGAH */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl sm:text-5xl font-bold text-white">
+            <span className="text-[#8B5CF6]">Tumpukan</span> teknologi
+          </h2>
+          <p className="text-gray-400 mt-2 text-lg">
+            Teknologi & alat yang saya gunakan setiap hari
+          </p>
         </div>
+
+        {/* GRID CARD */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          {limitedTech.map((tech, i) => (
+            <button
+              key={i}
+              onClick={() => goToDetail(tech)}
+              className="
+                bg-[#0f0f10]/70
+                backdrop-blur-xl
+                border border-white/5
+                rounded-2xl
+                p-6
+                flex flex-col items-center
+                transition-all duration-300
+                hover:scale-[1.07]
+                hover:border-[#8B5CF6]/40
+                hover:shadow-xl hover:shadow-[#8B5CF6]/20
+                cursor-pointer
+                group
+              "
+            >
+              <img
+                src={tech.icon}
+                alt={tech.name}
+                className="
+                  h-14 w-14 object-contain 
+                  drop-shadow-[0_5px_18px_rgba(139,92,246,0.55)] 
+                  group-hover:drop-shadow-[0_5px_20px_rgba(168,85,247,0.75)]
+                  transition-all
+                "
+              />
+
+              <span className="text-white text-sm font-medium mt-4">
+                {tech.name}
+              </span>
+            </button>
+          ))}
+        </div>
+
+        {/* VIEW MORE BUTTON */}
+        <div className="flex justify-end mt-10">
+          <button
+            onClick={() => navigate("/tech")}
+            className="
+              text-[#A855F7]
+              font-semibold
+              text-lg
+              hover:text-white
+              transition-all duration-300
+              flex items-center gap-2
+              hover:translate-x-1
+            "
+          >
+            View More →
+          </button>
+        </div>
+
       </div>
     </section>
   );

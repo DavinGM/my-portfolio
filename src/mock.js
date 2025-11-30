@@ -11,13 +11,13 @@ export const portfolioData = {
     keterangan: "Saya adalah seorang Frontend Engineer yang berfokus pada performa web one page, desain sistem, dan analisi Layout moderen. Dengan pengalaman 3 tahun, saya tidak hanya menulis kode, tetapi mencari solusi yang secara nyata meningkatkan bisnis dan pengalaman di NLFTs. Saya cukup ahli Dalam Penggunaa React.js  untuk menghasilkan aplikasi yang stabil dan berkualitas."
   },
 
-  socials: {
-    instagram: "https://instagram.com/xiao4_72",
-    facebook: "https://facebook.com/NairhaYenfei",
-    linkedin: "https://linkedin.com/in/davin-gahisan-016b77390",
-    github: "https://github.com/DavinGM",
-    twitter: "https://twitter.com/@Davin_SgM"
-  },
+socials: [
+  { instagram: "https://instagram.com/xiao4_72", icon: "" },
+  { facebook: "https://facebook.com/NairhaYenfei", icon: "" },
+  { linkedin: "https://linkedin.com/in/davin-gahisan-016b77390", icon: "" },
+  { github: "https://github.com/DavinGM", icon: "" },
+  { twitter: "https://twitter.com/@Davin_SgM", icon: "" },
+],
 
   skills: [
     {
@@ -67,11 +67,11 @@ export const portfolioData = {
   ],
 
   techStack: [
-    { name: "React", icon: "" },
-    { name: "Laravel", icon: "" },
-    { name: "JavaScript", icon: "" },
-    { name: "PHP", icon: "" },
-    { name: "Vs Code", icon: "" },
+    { name: "Next.Js", icon: "https://imgs.search.brave.com/P77vz8f_CSDPRp_02Y9kyUC1lz8r_FePsp7pa7fY7AU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmdo/ZHByby5jb20vd3At/Y29udGVudC90aGVt/ZXMvcG5naGRwcm8v/ZG93bmxvYWQvc29j/aWFsLW1lZGlhLWFu/ZC1icmFuZHMvbmV4/dC1qcy1sb2dvLWlj/b24ucG5n" },
+    { name: "Electron.Js", icon: "https://imgs.search.brave.com/3emGe26vuH2LH5NyWBISr5Q-a9p8JLwusI2VftVCE7M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91eHdp/bmcuY29tL3dwLWNv/bnRlbnQvdGhlbWVz/L3V4d2luZy9kb3du/bG9hZC9icmFuZHMt/YW5kLXNvY2lhbC1t/ZWRpYS9lbGVjdHJv/bi1pY29uLnBuZw" },
+    { name: "Laravel 12", icon: "https://imgs.search.brave.com/0D9rr2M6zcQTBqLpxrbojgnxgbcCSr2Xk-PgIbHnCIs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL2ZyZWUv/cG5nLTI1Ni9mcmVl/LWxhcmF2ZWwtbG9n/by1pY29uLXN2Zy1k/b3dubG9hZC1wbmct/MTcyMDA4NS5wbmc_/Zj13ZWJwJnc9MTI4" },
+    { name: "Vue.Js", icon: "https://imgs.search.brave.com/2yWCHf0M5Ws1MCJ4JHaCgQjW4e-jl5KUlwyw1H29ImE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91eHdp/bmcuY29tL3dwLWNv/bnRlbnQvdGhlbWVz/L3V4d2luZy9kb3du/bG9hZC9icmFuZHMt/YW5kLXNvY2lhbC1t/ZWRpYS92dWUtanMt/aWNvbi5wbmc" },
+    { name: "React.js", icon: "https://imgs.search.brave.com/4cORf9QUOByFYDBh2VqtEX-dXNbrFMm-YoBQWcKrK3s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi8zLzMwL1Jl/YWN0X0xvZ29fU1ZH/LnN2Zy8yNTBweC1S/ZWFjdF9Mb2dvX1NW/Ry5zdmcucG5n" },
     { name: "Nginx", icon: "" },
     { name: "Table plush", icon: "" },
     { name: "MySql", icon: "" },
@@ -80,6 +80,9 @@ export const portfolioData = {
     { name: "boostrap", icon: "" },
     { name: "node", icon: "" }
   ],
+  
+  
+
 
   projects: [
     {

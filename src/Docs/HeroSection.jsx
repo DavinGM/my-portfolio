@@ -33,7 +33,7 @@ const PersonalDocsHero = () => {
           <div className="space-y-4">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#8B5CF6]/10 border border-[#8B5CF6]/30 rounded-full">
               <FileText className="h-4 w-4 text-[#8B5CF6]" />
-              <span className="text-sm text-[#8B5CF6] font-medium">Dokumentasi Personal</span>
+              <span className="text-sm text-[#8B5CF6] font-medium">Dokumentasi Saya</span>
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
@@ -53,13 +53,48 @@ const PersonalDocsHero = () => {
           <div className="max-w-2xl mx-auto">
             <div className="relative group">
               <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400 group-focus-within:text-[#8B5CF6] transition-colors" />
-              <input
-                type="text"
-                placeholder="Cari dokumentasi... (contoh: biodata, project, skills)"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-12 pr-4 py-4 bg-gray-800/50 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[#8B5CF6] focus:ring-2 focus:ring-[#8B5CF6]/20 transition-all"
-              />
+              {/* Search Bar */}
+<div className="max-w-2xl mx-auto">
+  <div className="relative group">
+
+    {/* INPUT */}
+    <input
+      type="text"
+      placeholder="Cari lewat Ai Bot"
+      value={searchQuery}
+      onChange={(e) => setSearchQuery(e.target.value)}
+      className="
+        w-full pl-12 pr-14 py-4
+        bg-gray-800/50 border border-gray-700 rounded-xl
+        text-white placeholder-gray-500
+        focus:outline-none focus:border-[#8B5CF6]
+        focus:ring-2 focus:ring-[#8B5CF6]/20
+        transition-all
+      "
+    />
+
+    <img
+      src="https://imgs.search.brave.com/ll_5mkRMUVSi76j08-1lhYFd5yEBAh7u0ERQTXxM4qA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91eHdp/bmcuY29tL3dwLWNv/bnRlbnQvdGhlbWVz/L3V4d2luZy9kb3du/bG9hZC9icmFuZHMt/YW5kLXNvY2lhbC1t/ZWRpYS9naXRodWIt/Y29waWxvdC13aGl0/ZS1pY29uLnN2Zw"
+      alt="AI Icon"
+      className="
+        absolute right-4 top-1/2 -translate-y-1/2 
+        w-6 h-6 opacity-80
+        group-focus-within:opacity-100
+        transition-all
+      "
+    />
+
+    <Search
+      className="
+        absolute left-4 top-1/2 -translate-y-1/2 
+        h-5 w-5 text-gray-400
+        group-focus-within:text-[#8B5CF6]
+        transition-colors
+      "
+    />
+  </div>
+</div>
+
             </div>
           </div>
 
