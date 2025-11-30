@@ -1,3 +1,4 @@
+import { Youtube } from "lucide-react";
 
 export const portfolioData = {
   profile: {
@@ -5,10 +6,10 @@ export const portfolioData = {
     nicknames: ["GM", "Kina Dev"],
     title: "Frontend Engineer & Desaign Specialist",
     location: "Bandung, Indonesia",
-    bio: "Pengembang yang bersemanggat lahir dari sepuncuk harapan besar orangtua dan ahli dalam bidang teknologi Front-end Developer pengambang API dan Backend .",
+    bio: "Pengembang yang bersemanggat lahir dari sepuncuk harapan besar orangtua dan ahli dalam bidang teknologi Front-end Enginer dan Backend Developer .",
     avatar: "https://avatars.githubusercontent.com/u/228851591?v=4",
     heroImage: "https://images.unsplash.com/photo-1725800066480-7ccf189e9513",
-    keterangan: "Saya adalah seorang Frontend Engineer yang berfokus pada performa web one page, desain sistem, dan analisi Layout moderen. Dengan pengalaman 3 tahun, saya tidak hanya menulis kode, tetapi mencari solusi yang secara nyata meningkatkan bisnis dan pengalaman di NLFTs. Saya cukup ahli Dalam Penggunaa React.js  untuk menghasilkan aplikasi yang stabil dan berkualitas."
+    keterangan: "Saya adalah seorang Frontend Engineer yang berfokus pada performa single page application, desain sistem, dan analisi Layout moderen. Dengan pengalaman 3 tahun, saya tidak hanya menulis kode, tetapi mencari solusi yang secara nyata meningkatkan bisnis dan pengalaman di NLFTs. Saya cukup ahli Dalam Penggunaa React.js  untuk menghasilkan aplikasi yang stabil dan berkualitas."
   },
 
 socials: [
@@ -17,69 +18,270 @@ socials: [
   { linkedin: "https://linkedin.com/in/davin-gahisan-016b77390", icon: "" },
   { github: "https://github.com/DavinGM", icon: "" },
   { twitter: "https://twitter.com/@Davin_SgM", icon: "" },
+  { mail: "https://mail.google.com/mail/?view=cm&fs=1&to=davin.gm.etc@gmail.com", icon: "" },
+  { youtube: "www.youtube.com/@DAVINGahisan", icon: "" },
+  { whatsapp: "https://wa.me/62882001289177", icon: "" },
 ],
 
   skills: [
-    {
-      category: "Frontend Development",
-      items: [
-        { name: "React.js", level: 40 },
-        { name: "JavaScript", level: 70 },
-        { name: "HTML5 & CSS3", level: 90 },
-        { name: "Tailwind CSS", level: 1  },
-        { name: "Next.js", level: 0 },
-        { name: "Sass", level: 20 }
-      ]
-    },
-    {
-      category: "Backend Development",
-      items: [
-        { name: "Laravel", level: 60 },
-        { name: "PHP", level: 88 },
-        { name: "Node.js", level: 4 },
-        { name: "RESTful APIs", level: 0 },
-        { name: "MySQL", level: 87 },
-        { name: "MongoDB", level: 20 }
-      ]
-    },
-    {
-      category: "DevOps & System Administration",
-      items: [
-        { name: "Linux (Ubuntu)", level: 10 },
-        { name: "Docker", level: 0 },
-        { name: "Git/GitHub", level: 70 },
-        { name: "CI/CD", level: 0 },
-        { name: "Nginx", level: 20 },
-        { name: "Bash Scripting", level: 0 }
-      ]
-    },
-    {
-      category: "Tools & Others",
-      items: [
-        { name: "VS Code", level: 95 },
-        { name: "Postman", level: 40 },
-        { name: "Figma", level: 98 },
-        { name: "Visual Studio (IDE)", level: 2 },
-        { name: "Table Plush", level: 80 },
-        { name: "Herd", level: 10 }
-      ]
-    }
-  ],
+  {
+    category: "Frontend Development",
+    items: [
+      { 
+        name: "React.js", 
+        level: 60,
+        experience: "3–4 bulan",
+        description: "Dasar React, state management sederhana, props, component-based architecture.",
+        focus: "Meningkatkan pemahaman hooks dan reusable components."
+      },
+      { 
+        name: "JavaScript", 
+        level: 70,
+        experience: "1 tahun",
+        description: "Menguasai fundamental seperti DOM, functions, array method, async, fetch API."
+      },
+      { 
+        name: "HTML5 & CSS3", 
+        level: 90,
+        experience: "2 tahun",
+        description: "Structure semantic HTML, responsive layout, modern CSS technique, flexbox, grid."
+      },
+      { 
+        name: "Tailwind CSS", 
+        level: 10,
+        experience: "Baru mulai",
+        description: "Sudah mengenal utility-first styling, responsive utilities, dan custom theme."
+      },
+      { 
+        name: "Next.js", 
+        level: 5,
+        experience: "Baru mencoba",
+        description: "Paham basic file-based routing & perbedaan server-client component."
+      },
+      { 
+        name: "Sass", 
+        level: 20,
+        experience: "1–2 bulan",
+        description: "Nesting, variables, partials, simple reuse pattern."
+      },
+    ],
+  },
 
-  techStack: [
-    { name: "Next.Js", icon: "https://imgs.search.brave.com/P77vz8f_CSDPRp_02Y9kyUC1lz8r_FePsp7pa7fY7AU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmdo/ZHByby5jb20vd3At/Y29udGVudC90aGVt/ZXMvcG5naGRwcm8v/ZG93bmxvYWQvc29j/aWFsLW1lZGlhLWFu/ZC1icmFuZHMvbmV4/dC1qcy1sb2dvLWlj/b24ucG5n" },
-    { name: "Electron.Js", icon: "https://imgs.search.brave.com/3emGe26vuH2LH5NyWBISr5Q-a9p8JLwusI2VftVCE7M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91eHdp/bmcuY29tL3dwLWNv/bnRlbnQvdGhlbWVz/L3V4d2luZy9kb3du/bG9hZC9icmFuZHMt/YW5kLXNvY2lhbC1t/ZWRpYS9lbGVjdHJv/bi1pY29uLnBuZw" },
-    { name: "Laravel 12", icon: "https://imgs.search.brave.com/0D9rr2M6zcQTBqLpxrbojgnxgbcCSr2Xk-PgIbHnCIs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL2ZyZWUv/cG5nLTI1Ni9mcmVl/LWxhcmF2ZWwtbG9n/by1pY29uLXN2Zy1k/b3dubG9hZC1wbmct/MTcyMDA4NS5wbmc_/Zj13ZWJwJnc9MTI4" },
-    { name: "Vue.Js", icon: "https://imgs.search.brave.com/2yWCHf0M5Ws1MCJ4JHaCgQjW4e-jl5KUlwyw1H29ImE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91eHdp/bmcuY29tL3dwLWNv/bnRlbnQvdGhlbWVz/L3V4d2luZy9kb3du/bG9hZC9icmFuZHMt/YW5kLXNvY2lhbC1t/ZWRpYS92dWUtanMt/aWNvbi5wbmc" },
-    { name: "React.js", icon: "https://imgs.search.brave.com/4cORf9QUOByFYDBh2VqtEX-dXNbrFMm-YoBQWcKrK3s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi8zLzMwL1Jl/YWN0X0xvZ29fU1ZH/LnN2Zy8yNTBweC1S/ZWFjdF9Mb2dvX1NW/Ry5zdmcucG5n" },
-    { name: "Nginx", icon: "" },
-    { name: "Table plush", icon: "" },
-    { name: "MySql", icon: "" },
-    { name: "Git", icon: "" },
-    { name: "github", icon: "" },
-    { name: "boostrap", icon: "" },
-    { name: "node", icon: "" }
-  ],
+  {
+    category: "Backend Development",
+    items: [
+      { 
+        name: "Laravel", 
+        level: 60,
+        experience: "6–7 bulan",
+        description: "CRUD, routing, blade, Eloquent ORM, migration, middleware dasar."
+      },
+      { 
+        name: "PHP", 
+        level: 88,
+        experience: "2 tahun",
+        description: "OOP dasar, function, array, form handling, validation."
+      },
+      { 
+        name: "Node.js", 
+        level: 10,
+        experience: "Baru mulai",
+        description: "Mengerti konsep server-side JavaScript & express routing dasar."
+      },
+      { 
+        name: "RESTful APIs", 
+        level: 20,
+        experience: "3 bulan",
+        description: "Paham konsep endpoint, request, response, JSON, status code."
+      },
+      { 
+        name: "MySQL", 
+        level: 87,
+        experience: "1.5 tahun",
+        description: "Relational schema, join, indexing dasar, stored data management."
+      },
+      { 
+        name: "MongoDB", 
+        level: 20,
+        experience: "1 bulan",
+        description: "Basic CRUD, dokument-based structure, schema sederhana."
+      }
+    ],
+  },
+
+  {
+    category: "DevOps & System Administration",
+    items: [
+      { 
+        name: "Linux (Ubuntu)", 
+        level: 20,
+        experience: "3 bulan",
+        description: "Basic terminal, file system, permission, package installation."
+      },
+      { 
+        name: "Docker", 
+        level: 5,
+        experience: "Baru mencoba",
+        description: "Menjalankan container dan memahami konsep images & volumes."
+      },
+      { 
+        name: "Git/GitHub", 
+        level: 70,
+        experience: "1 tahun",
+        description: "Branching, merge, pull request, conflict resolution, workflow dasar."
+      },
+      { 
+        name: "CI/CD", 
+        level: 0,
+        experience: "Belum belajar",
+        description: "Belum mulai, tapi cocok dipelajari setelah memahami Git lebih dalam."
+      },
+      { 
+        name: "Nginx", 
+        level: 20,
+        experience: "3 bulan",
+        description: "Reverse proxy dasar, konfigurasi simple untuk deploy Laravel/React."
+      },
+      { 
+        name: "Bash Scripting", 
+        level: 5,
+        experience: "Baru coba-coba",
+        description: "Automasi kecil seperti alias, simple shell command."
+      },
+    ],
+  },
+
+  {
+    category: "Tools & Others",
+    items: [
+      { 
+        name: "VS Code", 
+        level: 95,
+        experience: "2 tahun",
+        description: "Extensions, debugging, workspace management, productivity setup."
+      },
+      { 
+        name: "Postman", 
+        level: 40,
+        experience: "4 bulan",
+        description: "Test API, collections, environment basic."
+      },
+      { 
+        name: "Figma", 
+        level: 98,
+        experience: "2 tahun",
+        description: "UI design, prototyping, design system dasar, component variant."
+      },
+      { 
+        name: "Visual Studio (IDE)", 
+        level: 5,
+        experience: "Baru coba",
+        description: "Untuk project C# kecil."
+      },
+      { 
+        name: "TablePlus", 
+        level: 80,
+        experience: "8 bulan",
+        description: "Database management MySQL/Mongo dengan UI cepat."
+      },
+      { 
+        name: "Herd", 
+        level: 10,
+        experience: "Baru mulai",
+        description: "Local PHP environment & Laravel server runner."
+      },
+    ],
+  },
+],
+
+
+
+techStack: [
+  {
+    name: "Next.js",
+    category: "Frontend Framework",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg",
+    description: "Framework React modern dengan arsitektur file-based routing, SSR, SSG, ISR.",
+    level: 70
+  },
+  {
+    name: "Electron.js",
+    category: "Desktop App Framework",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg",
+    description: "Framework untuk membuat aplikasi desktop cross-platform menggunakan JavaScript.",
+    level: 40
+  },
+  {
+    name: "Laravel 12",
+    category: "Backend Framework",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg",
+    description: "Framework PHP modern dengan fitur routing, Eloquent ORM, migrasi, middleware.",
+    level: 80
+  },
+  {
+    name: "Vue.js",
+    category: "Frontend Framework",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    description: "Framework JavaScript progresif untuk UI dan SPA dengan komponen reaktif.",
+    level: 60
+  },
+  {
+    name: "React.js",
+    category: "Frontend Library",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    description: "Library UI berbasis komponen untuk membangun SPA dan aplikasi modern.",
+    level: 75
+  },
+  {
+    name: "Nginx",
+    category: "Web Server / Reverse Proxy",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
+    description: "Web server berkinerja tinggi, sering digunakan sebagai reverse proxy atau load balancer.",
+    level: 35
+  },
+  {
+    name: "TablePlus",
+    category: "Database Client Tool",
+    icon: "https://tableplus.com/img/logo.png",
+    description: "GUI client modern untuk mengelola database MySQL, PostgreSQL, SQLite, dan lainnya.",
+    level: 80
+  },
+  {
+    name: "MySQL",
+    category: "Database",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    description: "Relational database system, digunakan untuk aplikasi PHP & backend lainnya.",
+    level: 87
+  },
+  {
+    name: "Git",
+    category: "Version Control System",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    description: "Sistem kontrol versi terdistribusi untuk kolaborasi dan manajemen kode.",
+    level: 70
+  },
+  {
+    name: "GitHub",
+    category: "Repository Hosting",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    description: "Platform hosting Git untuk kolaborasi, workflow CI/CD, project management.",
+    level: 65
+  },
+  {
+    name: "Bootstrap",
+    category: "CSS Framework",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+    description: "Framework CSS untuk membuat UI responsif dengan grid dan komponen siap pakai.",
+    level: 55
+  },
+  {
+    name: "Node.js",
+    category: "Backend Runtime",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    description: "JavaScript runtime untuk membangun backend, REST API, dan aplikasi real-time.",
+    level: 40
+  }
+],
   
   
 
@@ -322,5 +524,11 @@ Panduan Cepat:
 DAVIN GM@Davin MINGW64 /d/Kina_dev (main)
 `
     }
-  ]
+  ],
+
+  pendidikan: [
+    
+  ],
+
+
 };

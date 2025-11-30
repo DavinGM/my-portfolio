@@ -4,7 +4,7 @@ export default function LoadingScreen({ stage }) {
 
       {/* Logo */}
       <h1 className="text-4xl font-bold text-indigo-600 animate-pulse">
-        NLFTs
+        KinaDev
       </h1>
 
       {/* Spinner */}

@@ -3,7 +3,7 @@ import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { Award } from 'lucide-react';
 import { portfolioData } from '../mock';
-// import serImage from "../assets/ser.jpg";
+import serImage from "../assets/ser.jpg";
 import { images } from "../assets";         // kumpulan gambar
 
 const CertificationsSection = () => {
@@ -32,7 +32,6 @@ const CertificationsSection = () => {
                     <div className="bg-[#8B5CF6]/10 p-3 rounded-lg group-hover:bg-[#8B5CF6]/20 transition-colors">
                       <Award className="h-6 w-6 text-[#8B5CF6]" />
                     </div>
-                    <img src="" alt="" />
                     <Badge className="bg-[#8B5CF6]/10 text-[#8B5CF6] border-[#8B5CF6]/30">
                       {cert.year}
                     </Badge>
@@ -43,7 +42,6 @@ const CertificationsSection = () => {
                         <img
                             src={images[cert.image]}
                             alt={cert.title}
-                            className=""
                         />
 
                     <h3 className="text-lg font-bold text-white mb-2 group-hover:text-[#8B5CF6] transition-colors">
