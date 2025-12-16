@@ -1,7 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { portfolioData } from "../mock";
-
+import AnimatedContent from "./ui/AnimatedContent";
+import Dock from "./ui/Dock";
+import { VscHome, VscArchive, VscAccount, VscSettingsGear } from "react-icons/vsc";
 
 const TechStackSection = () => {
   const navigate = useNavigate();
@@ -9,6 +11,12 @@ const TechStackSection = () => {
   const goToDetail = (tech) => {
     navigate(`/tech/${tech.name.toLowerCase()}`);
   };
+  const items = [
+    { icon: <VscHome size={18} />, label: 'Home', onClick: () => alert('Home!') },
+    { icon: <VscArchive size={18} />, label: 'Archive', onClick: () => alert('Archive!') },
+    { icon: <VscAccount size={18} />, label: 'Profile', onClick: () => alert('Profile!') },
+    { icon: <VscSettingsGear size={18} />, label: 'Settings', onClick: () => alert('Settings!') },
+  ];
 
   return (
     <section id="techstack" className="py-20 bg-[#1a1a1a]">
@@ -24,7 +32,20 @@ const TechStackSection = () => {
           </p>
         </div>
 
-        {/* GRID CARD */}
+
+<AnimatedContent
+  distance={100}
+  direction="vertical"
+  reverse={false}
+  duration={1.9}
+  ease="power3.out"
+  initialOpacity={0}
+  animateOpacity={100}
+  scale={1.1}
+  threshold={0.1}
+  delay={0}
+>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {limitedTech.map((tech, i) => (
             <button
@@ -63,11 +84,17 @@ const TechStackSection = () => {
           ))}
         </div>
 
+</AnimatedContent>
+
+
+        {/* GRID CARD */}
+
         {/* VIEW MORE BUTTON */}
         <div className="flex justify-end mt-10">
           <button
             onClick={() => navigate("/tech")}
             className="
+            cursor-target
               text-[#A855F7]
               font-semibold
               text-lg

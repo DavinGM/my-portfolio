@@ -1,15 +1,24 @@
 import { Youtube } from "lucide-react";
 
 export const portfolioData = {
+
+  Notif: {
+    title: "Gak Tau Lupa kebanyakan",
+    date: "Rab, 14 Des 2025 00.59 WIB",
+    version: "4.2.9"
+  },
+
+
   profile: {
     name: "Davin Gahisan Mustafid",
     nicknames: ["GM", "Kina Dev"],
-    title: "Frontend Engineer & Desaign Specialist",
+    title: "Insinyur Frontend dan Spesialis desain moderen UI",
     location: "Bandung, Indonesia",
     bio: "Pengembang yang bersemanggat lahir dari sepuncuk harapan besar orangtua dan ahli dalam bidang teknologi Front-end Enginer dan Backend Developer .",
     avatar: "https://avatars.githubusercontent.com/u/228851591?v=4",
     heroImage: "https://images.unsplash.com/photo-1725800066480-7ccf189e9513",
-    keterangan: "Saya adalah seorang Frontend Engineer yang berfokus pada performa single page application, desain sistem, dan analisi Layout moderen. Dengan pengalaman 3 tahun, saya tidak hanya menulis kode, tetapi mencari solusi yang secara nyata meningkatkan bisnis dan pengalaman di NLFTs. Saya cukup ahli Dalam Penggunaa React.js  untuk menghasilkan aplikasi yang stabil dan berkualitas."
+    keterangan: "Saya adalah seorang Frontend Engineer yang berfokus pada performa single page application, desain sistem, dan analisi Layout moderen. Dengan pengalaman 3 tahun, saya tidak hanya menulis kode, tetapi mencari solusi yang secara nyata meningkatkan bisnis dan pengalaman di NLFTs. Saya cukup ahli Dalam Penggunaa React.js  untuk menghasilkan aplikasi yang stabil dan berkualitas.",
+    mail: "davin.gm.etc@gmail.com"
   },
 
 socials: [
@@ -19,7 +28,7 @@ socials: [
   { github: "https://github.com/DavinGM", icon: "" },
   { twitter: "https://twitter.com/@Davin_SgM", icon: "" },
   { mail: "https://mail.google.com/mail/?view=cm&fs=1&to=davin.gm.etc@gmail.com", icon: "" },
-  { youtube: "www.youtube.com/@DAVINGahisan", icon: "" },
+{ youtube: "www.youtube.com/@DAVINGahisan", icon: "" },
   { whatsapp: "https://wa.me/62882001289177", icon: "" },
 ],
 
@@ -206,7 +215,7 @@ techStack: [
   },
   {
     name: "Electron.js",
-    category: "Desktop App Framework",
+  category: "Desktop App Framework",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg",
     description: "Framework untuk membuat aplikasi desktop cross-platform menggunakan JavaScript.",
     level: 40
@@ -214,7 +223,7 @@ techStack: [
   {
     name: "Laravel 12",
     category: "Backend Framework",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg",
+    icon: "https://imgs.search.brave.com/P250wStTMr7EaDKHEVYn1vpSaS81qjYfjZfRtqtNh_E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY29u/LmljZXBhbmVsLmlv/L1RlY2hub2xvZ3kv/c3ZnL0xhcmF2ZWwu/c3Zn",
     description: "Framework PHP modern dengan fitur routing, Eloquent ORM, migrasi, middleware.",
     level: 80
   },
@@ -292,62 +301,41 @@ techStack: [
       title: "HoyoLabs For Deckop",
       description: "aplikasi Hoyolabs ini awal nya adalah sebuah Website namuan banyak para pengguna hoyolabs. ini memakai nya di browser padahal akan sanggat bagus jika ini di jadikan aplikasi akhirnya kami membuat aplikasi hoyolabs untuk deckop agar memudahkan player",
       image: "hoyo.png",
-      technologies: ["Vue.js","Electron.js"],
-      category: "full-stack",
+      year: "2025",
+      tech: ["Vue.js","Electron.js"],
+      category: "desktop",
       link: "/my-portfolio/downloads/hoyolabs-setup-1.0.0.exe",
       github: "",
-      name: "Download"
+      name: "Download",
+      color: "violet"
     },
-    // {
-    //   id: 2,
-    //   title: "RESTful API Integration System",
-    //   description: "Robust API integration system handling multiple third-party services with comprehensive error handling and rate limiting.",
-    //   image: "https://images.pexels.com/photos/34258667/pexels-photo-34258667.jpeg",
-    //   technologies: ["Node.js", "Express", "MongoDB", "Redis"],
-    //   category: "backend",
-    //   link: "#",
-    //   github: "#"
-    // },
-    // {
-    //   id: 3,
-    //   title: "Linux Server Automation Tools",
-    //   description: "Custom bash scripts and automation tools for Ubuntu server management, backup systems, and deployment workflows.",
-    //   image: "https://images.unsplash.com/photo-1758630737900-a28682c5aa69",
-    //   technologies: ["Bash", "Ubuntu", "Docker", "Nginx"],
-    //   category: "devops",
-    //   link: "#",
-    //   github: "#"
-    // },
-    // {
-    //   id: 4,
-    //   title: "Real-Time Chat Application",
-    //   description: "WebSocket-based chat application with user authentication, file sharing, and real-time notifications.",
-    //   image: "https://images.pexels.com/photos/34212896/pexels-photo-34212896.jpeg",
-    //   technologies: ["React", "Socket.io", "Node.js", "MongoDB"],
-    //   category: "full-stack",
-    //   link: "#",
-    //   github: "#"
-    // },
-    // {
-    //   id: 5,
-    //   title: "Task Management System",
-    //   description: "Collaborative task management platform with team features, deadline tracking, and progress visualization.",
-    //   image: "https://images.unsplash.com/photo-1725800066480-7ccf189e9513",
-    //   technologies: ["React", "Laravel", "MySQL", "Redux"],
-    //   category: "frontend",
-    //   link: "#",
-    //   github: "#"
-    // },
-    // {
-    //   id: 6,
-    //   title: "CI/CD Pipeline Framework",
-    //   description: "Custom continuous integration and deployment framework for automated testing and deployment workflows.",
-    //   image: "https://images.unsplash.com/photo-1755541516450-644adb257ad0",
-    //   technologies: ["Docker", "GitHub Actions", "Bash", "Nginx"],
-    //   category: "devops",
-    //   link: "#",
-    //   github: "#"
-    // }
+    {
+      id: 2,
+      title: "Ryn Course",
+      description: " Website Belajar Pemrograman Terbaik, Aman , Murah , Legal dan terpecaya Seindonesia",
+      image: "RynVerse.jpg",
+      year: "2025",
+      tech: ["React.js","Next.js", "Laravel 12", "Tailwind CSS", "PHP"],
+      category: "web",
+      link: "https://github.com/NLFTs/RynDev",
+      github: "https://github.com/NLFTs/RynDev",
+      name: "View",
+      color: "violet"
+    },
+    {
+      id: 3,
+      title: "NLFTs",
+      description: "Komunitas Sekaligus menjadi Perushaan besar yang di bangun oleh Nairha. Sebagai Langkah awal Project Pelajar Asia Code 2022 dan Programer Nusantara",
+      image: "NLFTs.png",
+      year: "2024",
+      tech: ["React.js", "Tailwind CSS"],
+      category: "web",
+      link: "https://nlfts.netlify.app",
+      github: "https://github.com/DavinGM/NLFTs",
+      name: "View",
+      color: "violet"
+    },
+    
   ],
 
   experience: [

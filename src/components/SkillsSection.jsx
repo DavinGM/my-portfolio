@@ -18,12 +18,12 @@ const SkillsSection = () => {
 
           {/* Skills Tabs */}
           <Tabs defaultValue={portfolioData.skills[0].category} className="w-full">
-            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 gap-2 bg-[#1a1a1a] p-2 mb-8">
+            <TabsList className=" grid w-full grid-cols-2 lg:grid-cols-4 gap-2 bg-[#1a1a1a] p-2 mb-8">
               {portfolioData.skills.map((skillCategory, index) => (
                 <TabsTrigger
                   key={index}
                   value={skillCategory.category}
-                  className="data-[state=active]:bg-[#8B5CF6] data-[state=active]:text-white text-gray-400 transition-all duration-300"
+                  className="cursor-target data-[state=active]:bg-[#8B5CF6] data-[state=active]:text-white text-gray-400 transition-all duration-300"
                 >
                   {skillCategory.category.split(' ')[0]}
                 </TabsTrigger>

@@ -33,7 +33,7 @@ const Footer = () => {
             {/* di buat card alert hijau  dengan border hitam*/}
             <div className="bg-green-400 p-4 rounded-lg mb-4 border border-[#2d2d2d]">
             <p className="text-white-400 mb-4">
-              - Update Sertifikasi <i>00.13/sen, 17 Nov 2025</i> 1.1 
+              - {portfolioData.Notif.title} <i>{portfolioData.Notif.Date}</i> {portfolioData.Notif.version} 
             </p>
             </div>
             <div className="flex gap-3">
@@ -62,7 +62,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="text-gray-400 hover:text-[#8B5CF6] transition-colors duration-300"
+                  className="cursor-target text-gray-400 hover:text-[#8B5CF6] transition-colors duration-300"
                 >
                   Tentang
                 </button>
@@ -70,7 +70,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('skills')}
-                  className="text-gray-400 hover:text-[#8B5CF6] transition-colors duration-300"
+                  className="cursor-target text-gray-400 hover:text-[#8B5CF6] transition-colors duration-300"
                 >
                   Skill dan telent
                 </button>
@@ -78,7 +78,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('projects')}
-                  className="text-gray-400 hover:text-[#8B5CF6] transition-colors duration-300"
+                  className="cursor-target text-gray-400 hover:text-[#8B5CF6] transition-colors duration-300"
                 >
                   Project
                 </button>
@@ -86,7 +86,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('experience')}
-                  className="text-gray-400 hover:text-[#8B5CF6] transition-colors duration-300"
+                  className="cursor-target text-gray-400 hover:text-[#8B5CF6] transition-colors duration-300"
                 >
                   Pengalaman
                 </button>
@@ -98,12 +98,12 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Email: davin.gm.etc@gmail.com</li>
+              <li>Email: {portfolioData.profile.mail}</li>
               <li>Location: {portfolioData.profile.location}</li>
               <li className="pt-2">
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="text-[#8B5CF6] hover:text-[#A855F7] transition-colors duration-300 font-medium"
+                  className="cursor-target text-[#8B5CF6] hover:text-[#A855F7] transition-colors duration-300 font-medium"
                 >
                   Hubungi saya →
                 </button>

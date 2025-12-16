@@ -42,7 +42,7 @@ const CodeShowcaseSection = () => {
                 <TabsTrigger
                   key={snippet.id}
                   value={index.toString()}
-                  className="data-[state=active]:bg-[#8B5CF6] data-[state=active]:text-white text-gray-400 transition-all duration-300 text-xs sm:text-sm"
+                  className="cursor-target data-[state=active]:bg-[#8B5CF6] data-[state=active]:text-white text-gray-400 transition-all duration-300 text-xs sm:text-sm"
                 >
                   <Code className="h-4 w-4 mr-2 hidden sm:inline" />
                   {snippet.language}
@@ -66,7 +66,7 @@ const CodeShowcaseSection = () => {
                       size="sm"
                       variant="ghost"
                       onClick={() => copyToClipboard(snippet.code, snippet.id)}
-                      className="text-gray-400 hover:text-white hover:bg-[#8B5CF6]/20"
+                      className="cursor-target text-gray-400 hover:text-white hover:bg-[#8B5CF6]/20"
                     >
                       {copiedId === snippet.id ? (
                         <>

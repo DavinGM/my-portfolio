@@ -25,6 +25,7 @@ const HomePage = () => {
       <CodeShowcaseSection />
       <ContactSection />
       <Footer />
+      
     </div>
   );
 };

@@ -72,7 +72,7 @@ ${formData.message}`;
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-              <span className="text-[#8B5CF6]">Hubungi</span>saya
+              <span className="text-[#8B5CF6]">Hubungi </span>saya
             </h2>
             <p className="text-gray-400 text-lg">Mari bekerja sama pada proyek Anda berikutnya</p>
           </div>
@@ -126,7 +126,7 @@ ${formData.message}`;
                         href={social.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-[#1a1a1a] border border-[#2d2d2d] p-3 rounded-lg hover:bg-[#8B5CF6] hover:border-[#8B5CF6] transition-all duration-300 group"
+                        className="cursor-target bg-[#1a1a1a] border border-[#2d2d2d] p-3 rounded-lg hover:bg-[#8B5CF6] hover:border-[#8B5CF6] transition-all duration-300 group"
                       >
                         <Icon className="h-5 w-5 text-gray-400 group-hover:text-white transition-colors" />
                       </a>
@@ -150,7 +150,7 @@ ${formData.message}`;
                     onChange={handleChange}
                     placeholder="nama anda"
                     required
-                    className="bg-[#0f0f10] border-[#2d2d2d] text-white placeholder:text-gray-500 focus:border-[#8B5CF6]"
+                    className="cursor-target bg-[#0f0f10] border-[#2d2d2d] text-white placeholder:text-gray-500 focus:border-[#8B5CF6]"
                   />
                 </div>
 
@@ -166,7 +166,7 @@ ${formData.message}`;
                     onChange={handleChange}
                     placeholder="kamu.email@example.com"
                     required
-                    className="bg-[#0f0f10] border-[#2d2d2d] text-white placeholder:text-gray-500 focus:border-[#8B5CF6]"
+                    className="cursor-target bg-[#0f0f10] border-[#2d2d2d] text-white placeholder:text-gray-500 focus:border-[#8B5CF6]"
                   />
                 </div>
 
@@ -182,13 +182,13 @@ ${formData.message}`;
                     placeholder="katakan saja di sini ."
                     required
                     rows={6}
-                    className="bg-[#0f0f10] border-[#2d2d2d] text-white placeholder:text-gray-500 focus:border-[#8B5CF6] resize-none"
+                    className="cursor-target bg-[#0f0f10] border-[#2d2d2d] text-white placeholder:text-gray-500 focus:border-[#8B5CF6] resize-none"
                   />
                 </div>
 
                 <Button
                   type="submit"
-                  className="w-full bg-[#8B5CF6] hover:bg-[#A855F7] text-white py-6 text-lg transition-all duration-300"
+                  className="cursor-target w-full bg-[#8B5CF6] hover:bg-[#A855F7] text-white py-6 text-lg transition-all duration-300"
                 >
                   <Send className="mr-2 h-5 w-5" />
                   Send Message
